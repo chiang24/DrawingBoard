@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>画板</title>
+    <style>
+    *{margin: 0;padding: 0;}
+    body{
+        overflow: hidden;
+    }
+    #painting{
+      background: #EAEAEA;
+      display: block;
+    }
+    .actions{
+      position: fixed;
+      top: 0;
+      left: 0; 
+      width: 100%;
+      padding: 4px;
+    }
+    </style>
+</head>
+<body>
+    <div class="actions">
+        <label><input type="radio" name="penType" value="pen" checked>笔</label>
+         <label><input type="radio" name="penType" value="eraser">橡皮擦</label>
+         <button id="save">保存</button>
+    </div>
+    <canvas id="painting"></canvas>
+    <script src="./main.js"></script>
+</body>
+</html>
